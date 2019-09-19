@@ -27,4 +27,8 @@ describe '#duplicate_count' do
   it 'returns 2 for several duplicates of two characters' do
     expect(duplicate_count('Indivisibilities')).to eq(2)
   end
+
+  it 'returns 2 for duplicates of numbers and alphabet characters' do
+    expect(duplicate_count("aA11")).to eq(2)
+  end
 end

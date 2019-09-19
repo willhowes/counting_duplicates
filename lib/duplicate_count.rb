@@ -1,7 +1,7 @@
 def duplicate_count(text_to_test)
   character_count = {}
   duplicates = []
-  text_to_test.split('').each do |char|
+  text_to_test.downcase.split('').each do |char|
     if character_count.include? char
       duplicates << char
     else
