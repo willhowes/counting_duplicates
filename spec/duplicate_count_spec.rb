@@ -29,6 +29,10 @@ describe '#duplicate_count' do
   end
 
   it 'returns 2 for duplicates of numbers and alphabet characters' do
-    expect(duplicate_count("aA11")).to eq(2)
+    expect(duplicate_count('aA11')).to eq(2)
+  end
+
+  it 'returns 0 for a blank string' do
+    expect(duplicate_count('')).to eq(0)
   end
 end
