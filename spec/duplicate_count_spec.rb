@@ -11,4 +11,8 @@ describe '#duplicate_count' do
   it 'returns 1 for duplicates of one letter' do
     expect(duplicate_count('aa')).to eq(1)
   end
+
+  it 'returns 2 for duplicates of more than one letter' do
+    expect(duplicate_count('aabb')).to eq(2)
+  end
 end
