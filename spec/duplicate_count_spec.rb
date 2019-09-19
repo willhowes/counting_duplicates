@@ -19,4 +19,8 @@ describe '#duplicate_count' do
   it 'returns 2 for duplicates of more than one letter where there are non-duplicate letters' do
     expect(duplicate_count('aabbc')).to eq(2)
   end
+
+  it 'returns 1 for more than two duplications of one letter' do
+    expect(duplicate_count('indivisibility')).to eq(1)
+  end
 end
